@@ -257,3 +257,8 @@ function closeTransactionSection(){
   $(".transaction-section").hide();
   $(".transaction-section-x").hide();
 }
+
+
+$(window).bind('beforeunload', function(){
+	return '>>>>>Before You Go<<<<<<<< \n Your custom message go here';
+});
