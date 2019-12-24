@@ -1,0 +1,261 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.homepage-container{
+  width: 100%;
+}
+.header-box{
+  padding: 5px 10px;
+}
+.logo{
+  overflow: hidden;
+  display: inline-block;
+  color: #9a3d37;
+}
+.logobox-ubstxt{
+  font-size: 30px;
+}
+  .westingbank{
+  font-size: 8px;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  color: #361406!important;
+  font-family: arial;
+  font-size: 90%;
+}
+.menu-for-smallscreen{
+  position: fixed;
+  z-index: 10;
+  background: #fff;
+  padding: 5px;
+}
+.menu-for-smallscreen i{
+  font-size: 35px;
+  margin-left: 21px;
+  text-shadow: 4px 4px 4px grey;
+}
+.bigscreen-menu-box{
+  display: inline-block;
+  float: right;
+}
+@media screen and (max-width:650px)
+and (min-width: 0px){
+  .bigscreen-menu-box{
+    display: none;
+  }
+}
+.menu-box{
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  top:0;
+  bottom: 0;
+  display: none;
+}
+.menu-box ul{
+  overflow: hidden;
+}
+.menu-box ul li{
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+.menu-box .index-login-menu{
+  margin-top: 20px;
+  background: #361406!important;
+  color: snow!important;
+  display: block;
+}
+.menu-box .fa-remove{
+  position: fixed;
+  right: 0;
+  padding: 10px;
+  font-size: 23px;
+}
+
+.section-1{
+  margin-top: 80px;
+  font-family: verdana;
+}
+.section-1 .img-box{
+}
+@media screen and (min-width: 767px)
+and (max-width: 100000px){
+  .section-1 img{
+    width: 700px!important;
+  }
+  .section-1 .content-box p{
+    width: 700px;
+  }
+}
+.section-1 .logo{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  color: snow;
+  background: rgba(0,0,0,0.9);
+  padding: 5px;
+  border-radius: 5px;
+  font-family: arial;
+}
+.section-1 .box-2{
+  border-radius: 5px;
+  position: relative;
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+.box-2 img{
+  display: block;
+  width: 100%;
+}
+.content-box{
+  padding: 20px 0;
+}
+.contents h4{
+  margin-bottom: 10px;
+}
+.box-2 .title-box{
+  display: block;
+  font-size: 23px;
+  color: #361406;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.section-1 .contents{
+  padding-top: 5px;
+  display: block;
+}
+@media screen and (min-width: 700px)
+and (max-width: 100000px){
+
+  .section-1 .contents, .section-1 hr{
+    width: 700px;
+  }
+}
+.section-1 img{
+  width: 100%;
+  border-radius: 5px!important;
+}
+@media screen and (min-width: 900px)
+and (max-width: 3000px){
+  .section-1 img{
+    height: 300px;
+  }
+}
+.switch-p a{
+  color: blue!important;
+  font-size: 90%;
+}
+
+
+/* WARNING: contact us */
+.contact-box{
+  overflow: auto;
+  border: 1px solid grey;
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1189px)
+and (max-width: 600000px){
+  .contact-box{
+    border: 1px solid grey;
+    position: absolute;
+    top: 44px;
+    right: 27px;
+    position: fixed;
+  }
+}
+.input-box{
+  background: #1c1100;
+  margin-top: 10px;
+  padding: 8px 0;
+  overflow: hidden;
+}
+.input-box p{
+  font-size: 22px;
+  color: #fff!important;
+  width: 95%;
+  margin: auto;
+  padding-top: 5px;
+}
+.input-box a{
+  background: #fff;
+  margin-left: 10px;
+  border-radius: 2px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.goback-box{
+  background: #361406;
+  color: #fff;
+  padding: 10px;
+  position:absolute;
+  right: 5px;
+  top: 5px;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+}
+
+.contact-information-box{
+  display: none;
+}
+.customer-information-box h5{
+}
+.contact-information-box label{
+  display: block;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.contact-information-box input{
+  border-radius: 5px;
+  padding: 5px;
+  width: 90%;
+  display: block;
+}
+.contact-information-box button{
+  padding: 5px;
+  border-radius: 5px;
+  border-color: transparent;
+  width: 100px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  background: #361406;
+  color: #fff;
+}
+.contact-information-box textarea{
+  width: 95%;
+}
+
+.location-box{
+  height: 150px;
+  border: 1px solid grey;
+  display: none;
+}
+.location-box i{
+  font-size: 40px;
+  display: inline-block;
+  margin: 50px;
+}
+
+.footer{
+  text-align: center;
+}
+.footer span{
+  display: inline-block;
+  padding: 10px;
+  font-size: 90%;
+}
