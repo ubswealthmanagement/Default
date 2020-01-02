@@ -227,8 +227,16 @@ function openEmailSection(){
   $(".default-section").show();
 }
 function openTransactionSection(){
-  $(".menu-section").hide();
-  $(".transaction-section").show();
+  if (account == "20") {
+    alert(account);
+    $(".menu-section").hide();
+    $(".transaction-section").hide();
+    $(".transaction-section-x").show();
+  } else {
+    alert(account);
+    $(".menu-section").hide();
+    $(".transaction-section").show();
+  }
 }
 function openTransactionSectionX(){
   $(".menu-section").hide();
