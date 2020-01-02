@@ -228,7 +228,6 @@ function openEmailSection(){
 }
 function openTransactionSection(){
   if (account == "20") {
-    alert(account);
     $(".menu-section").hide();
     $(".transaction-section").hide();
     $(".transaction-section-x").show();
