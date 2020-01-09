@@ -104,6 +104,12 @@ function verifyPassword(){
     openThisAccount(".account-2");
     account = 20;
   }
+  else if (accPassword == "wie1vi_ie1") {
+    // proceed to next level two of security checks
+    //hide show next security
+    openThisAccount(".account-3");
+    account = 30;
+  }
    else {
     $(".security-check-2 #error-txt").html("Incorrect Password");
     setTimeout(
@@ -231,7 +237,12 @@ function openTransactionSection(){
     $(".menu-section").hide();
     $(".transaction-section").hide();
     $(".transaction-section-x").show();
-  } else {
+  } else if (account == "30") {
+    $(".menu-section").hide();
+    $(".transaction-section").hide();
+    $(".transaction-section-y").show();
+  }
+  else {
     alert(account);
     $(".menu-section").hide();
     $(".transaction-section").show();
