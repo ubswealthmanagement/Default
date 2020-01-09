@@ -274,6 +274,7 @@ function closeMenuSection(){
 function closeTransactionSection(){
   $(".transaction-section").hide();
   $(".transaction-section-x").hide();
+  $(".transaction-section-y").hide();
 }
 
 
