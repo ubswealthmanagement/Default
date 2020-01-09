@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+    font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/kolos.png">
   </head>
   <body>
@@ -321,6 +322,17 @@
       </ul>
     </div>
 
+    <div class="transaction-style transaction-section-y hide">
+      <i class="fa fa-remove close-transaction-btn" onclick="closeTransactionSection()"></i>
+      <ul>
+        <br><br>
+        <hr>
+        <li class="top-effect">
+
+        </li>
+      </ul>
+    </div>
+
     <div class="account-1 ACCOUNT">
 
       <div class="top-logo">
@@ -450,7 +462,7 @@
             <span class="account-previous-balance-txt">$ 2,160,000.00</span>
             <br>
             <span class="account-previous-txt">Previous Day Balance</span>
-          </div> 
+          </div>
         </div>
         <div class="box-2 quick-links-box" >
           <div class="top">
@@ -513,6 +525,102 @@
             <span class="t-credit">2,160,000.00</span>
             <span class="t-debit">0.00 </span>
             <span class="t-balance">2,160,000.00 </span>
+          </li>
+
+        </ul>
+      </div>
+
+
+    </div>
+
+    <div class="account-3 ACCOUNT">
+
+      <div class="top-logo">
+        <span> <i class="fa fa-bars" onclick="openMenuSection()"></i> <span class="top-logo-name">UBS</span><span class="top-logo-slogan"> WEALTH MANAGEMENT</span></span>
+        <div class="signout-box">
+          <a href="default.html">Logout</a>
+        </div>
+      </div>
+      <div class="account-user-info">
+        <span class="nameOfUser">Salihu Yahaya</span>
+        <span class="addressOfUser"></span>
+      </div>
+      <div class="account-balance-info">
+        <div class="box-2">
+          <div class="box-2-balance">
+            <span class="account-balance-txt">$ 3,800,150.00</span> <!-- WARNING: CHNAGE-TRANSFER-SIMULATION -->
+            <br>
+            <span class="account-available-balance-txt">Available Balance</span>
+
+            <span class="account-time-txt">as of: <i class="time">12:00am</i></span>
+          </div>
+          <div class="box-2-balance">
+            <span class="account-previous-balance-txt">$ 3,800,150.00</span>
+            <br>
+            <span class="account-previous-txt">Previous Day Balance</span>
+          </div>
+        </div>
+        <div class="box-2 quick-links-box" >
+          <div class="top">
+            <span class="transfer-style">Transfer In</span><span class="transfer-style">Transfer Out</span>
+          </div>
+          <div class="quick-links">
+            <a onclick="openEmailSection()">Bill & Payments</a>
+            <a onclick="openTransferSection()">Transfer money</a>
+            <a onclick="openEmailSection()">Stop Payment</a>
+          </div>
+        </div>
+      </div>
+      <div class="dsk-navigation">
+        <div class="box-4 active-section" onclick="openTransactionSectionX();">
+          <span class="activity-txt">ACTIVITY</span>
+          <span class="activity-new-txt">1 new</span>
+        </div>
+        <div class="box-4" onclick="openTransferSection()">
+          <span class="activity-txt">Transfer Funds</span>
+          <span class="activity-new-txt">Xpress Wire</span>
+        </div>
+        <div class="box-4" onclick="openEmailSection()">
+          <span class="activity-txt">Bill & Payment</span>
+          <span class="activity-new-txt">Instant pay</span>
+        </div>
+
+      </div>
+      <div class="activity-section sections">
+        <ul>
+          <li>
+            <span class="t-date">Date <i class="fa fa-clock-o"></i> </span>
+            <span class="t-description">Description <i class="fa fa-arrow-down"></i> </span>
+            <span class="t-status">Status <i class="fa fa-arrow-down"></i> </span>
+            <span class="t-credit">Credit <i class="fa fa-arrow-down"></i> </span>
+            <span class="t-debit">Debit <i class="fa fa-arrow-down"></i> </span>
+            <span class="t-balance">Balance <i class="fa fa-arrow-down"></i> </span>
+          </li>
+          <!-- WARNING: DATA -->
+          <!-- WARNING:
+          <li class="actual-transaction">
+            <span class="t-date">22/12/19 </span>
+            <span class="t-description">
+              P.O.S Transact
+              <small></small>
+             </span>
+            <span class="t-status"> <i class="fa fa-check"></i> </span>
+            <span class="t-credit">1.00 </span>
+            <span class="t-debit">0.00 </span>
+            <span class="t-balance">3,816,183.00</span>
+          </li>
+         -->
+
+          <li class="actual-transaction">
+            <span class="t-date"> </span>
+            <span class="t-description">
+              None
+              <small></small>
+             </span>
+            <span class="t-status"> <i class="fa fa-check"></i> </span>
+            <span class="t-credit"></span>
+            <span class="t-debit"> </span>
+            <span class="t-balance"> </span>
           </li>
 
         </ul>
