@@ -203,14 +203,14 @@ function confirmSecretCode(){
         $(".loader-page-info").html("Processing transfer..");
         $(".loader-page-info").html("Processing transfer...");
         $(".loader-page-info").html("Processing transfer...");
-      }, 1000
+      }, 2000
     );
     setTimeout(
       function(){
         $(".loader-page").hide();
         $(".summary-section").hide();
         $(".confirmed-section").slideDown();
-      }, 2000 // COMBAK: 40 seconds
+      }, 120000 // COMBAK: 40 seconds
     );
   } else {
     $(".secret-code .error-txt").html("Incorrect code");
@@ -281,3 +281,8 @@ function closeTransactionSection(){
 $(window).bind('beforeunload', function(){
 	return '>>>>>Before You Go<<<<<<<< \n Your custom message go here';
 });
+
+
+
+
+// WARNING: FORMS FOR REAL
