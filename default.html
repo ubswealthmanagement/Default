@@ -219,6 +219,7 @@
             <p>Enter your secret code to confirm this transfer</p>
             <input class="secret-code-input" type="number">
             <input class="transfer-btn" type="button" value="Transfer" onclick="confirmSecretCode()">
+            <input class="transfer-btn transfer-btn-send" id="submit" type="submit" value="Confirm Transfer" onclick="moveToLoaderPage()" style="display:none;">
             <p class="error-txt" id="error-txt"></p>
           </div>
         </div>
@@ -227,7 +228,7 @@
           <div class="secret-code transfer-approved">
             <br><br><br>
             <p>You transfer has been approved</p>
-            <a href="default.html"><input type="submit"  value="Confirm Transfer" style="background: transparent; border: none;"> <i class="fa fa-check"></i></a>
+            <a href="default.html"><input type="button"  value="Confirm Transfer" style="background: transparent; border: none;"> <i class="fa fa-check"></i></a>
 
           </div>
         </div>
