@@ -59,7 +59,6 @@ $(".transfer-close-btn").click(
 $(".transfer-nxt-btn").click(
   function(){
     verifyTransferInfo();
-
   }
 );
 
@@ -196,13 +195,15 @@ function confirmSecretCode(){
     //LOAD PAGE FOR 1Minutes
     $(".receiver-step-two").css("color","green");
     $(".line-step-two").css("background","green");
+    $(".transfer-btn").hide();
     setTimeout(
       function(){
-        $(".loader-page").show();
-        $(".loader-page-info").html("Processing transfer.");
-        $(".loader-page-info").html("Processing transfer..");
-        $(".loader-page-info").html("Processing transfer...");
-        $(".loader-page-info").html("Processing transfer...");
+        $(".transfer-btn-send").show();
+        //$(".loader-page").show();
+        //$(".loader-page-info").html("Processing transfer.");
+        //$(".loader-page-info").html("Processing transfer..");
+        //$(".loader-page-info").html("Processing transfer...");
+        //$(".loader-page-info").html("Processing transfer...");
       }, 2000
     );
     setTimeout(
@@ -220,6 +221,9 @@ function confirmSecretCode(){
       },2000
     );
   }
+}
+function moveToLoaderPage(){
+  window.location.href = 'processing';
 }
 
 
@@ -278,10 +282,20 @@ function closeTransactionSection(){
 }
 
 
-$(window).bind('beforeunload', function(){
-	return '>>>>>Before You Go<<<<<<<< \n Your custom message go here';
-});
+var warn_on_unload="";
+    $('input:text,input:checkbox,input:radio,textarea,select').one('change', function()
+    {
+        warn_on_unload = "Leaving this page will cause any unsaved data to be lost.";
 
+        $('#submit').click(function(e) {
+            warn_on_unload = "";});
+
+            window.onbeforeunload = function() {
+            if(warn_on_unload != ''){
+                return warn_on_unload;
+            }
+        }
+    });
 
 
 
