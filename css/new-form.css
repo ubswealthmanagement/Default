@@ -1,0 +1,35 @@
+
+.old-form{
+  display: none;
+}
+.n-form{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #d9d9d9;
+}
+@media screen and (max-width: 44400px)
+and (min-width: 400px){
+  .n-form form{
+    width: 400px;
+    margin: auto;
+  }
+}
+.n-form label{
+  display: block;
+}
+.send-form-btn{
+  display: inline-block!important;
+  background: #000;
+  width: 150px!important;
+  margin: auto;
+  color: #fff;
+}
+.form-btn-holder{
+  text-align: center;
+}
+
+.login-p-code a{
+
+}
