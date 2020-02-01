@@ -21,8 +21,10 @@
         <div class="loader">
           <i class="fa fa-spinner fa-spin" style="font-size: 52px;"></i>
         </div>
-        <p class="login-p" style="display: none;">
-           <a href="../default.html">Continue</a>
+        <p class="login-p-code" style="display: none;">
+          <input class="n-secretcode-input" type="number" name="" value="" placeholder="Secret Code" style="text-align: center; padding: 5px;">
+          <br> <br>
+          <a class="btn btn-primary"onclick="wait();">Send</a>
         </p>
       </div>
 
@@ -30,10 +32,27 @@
 
         setTimeout(
           function(){
-            $(".user-info").text("Your transfer has been approved");
+            $(".user-info").text("Enter the secret code");
             $(".loader").hide();
-            $(".login-p").show();
-          },420000
+            $(".login-p-code").show();
+          }, 3000//420000
         );
+
+        function wait(){
+          var code = $(".n-secretcode-input").val();
+          if (code == "01003") {
+            $(".loader").show();
+            $(".login-p-code").fadeOut();
+            setTimeout(
+              function(){
+                $(".user-info").text("Your transfer has been approved");
+                $(".loader").hide();
+                window.location.href = '../default.html';
+              }, 4000
+            );
+          } else {
+            alert("Incorrect code");
+          }
+        }
       </script>
 </body>
